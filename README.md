@@ -1,6 +1,6 @@
 # [ UI요소 만들기 강의 코드 ]
 
-| 인프런 FE재남님의 강의를 들으며 작성하는 레포지토리
+> 인프런 FE재남님의 UI 요소 직접 만들기 강의를 들으며 작성하는 레포지토리입니다.
 
 ## 디렉토리 구조
 
@@ -16,13 +16,7 @@
 
 ## Getting Started
 
-- 다운로드 받은 파일의 압축을 해제하고, 터미널에서 해당 폴더로 이동합니다.
-
-```bash
-cd ui-study
-```
-
-- npm module 설치를 진행합니다.
+- npm module 설치
 
 ```bash
 npm install
@@ -32,14 +26,10 @@ pnpm install
 yarn
 ```
 
-- 개발 서버를 실행합니다.
+- 개발 서버를 실행
 
 ```bash
 npm run dev
-# or
-pnpm run dev
-# or
-yarn dev
 ```
 
 - 브라우저에서 [http://localhost:3000](http://localhost:3000)에 접속하여 결과를 확인합니다.
