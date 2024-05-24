@@ -1,3 +1,7 @@
+import Accordion from './components/accordion';
+import InfiniteScrollR from './components/infiniteScroll/react';
+import InfiniteScrollV from './components/infiniteScroll/vanilla';
+
 export const routePaths = [
   '/',
   '/accordion',
@@ -35,6 +39,7 @@ type BaseRoute = {
   link: ROUTE_PATH;
   name: string;
 };
+// route children이 배열인지 JSX인지에 따라 타입 나누기
 export type ParentRoute = BaseRoute & {
   children: ROUTE_PATH[];
 };
@@ -73,8 +78,9 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
     key: '/accordion',
     link: '/accordion',
     name: '01. 아코디언',
-    children: null,
+    children: Accordion,
   },
+
   '/tabMenu': {
     key: '/tabMenu',
     link: '/tabMenu',
@@ -133,13 +139,13 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
     key: '/infiniteScroll/react',
     link: '/infiniteScroll/react',
     name: 'React#1 - IO',
-    children: null,
+    children: InfiniteScrollR,
   },
   '/infiniteScroll/vanilla': {
     key: '/infiniteScroll/vanilla',
     link: '/infiniteScroll/vanilla',
     name: 'Vanilla',
-    children: null,
+    children: InfiniteScrollV,
   },
   '/scrollBox': {
     key: '/scrollBox',
@@ -238,6 +244,7 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
   },
 };
 
+// 타입 가드
 export const isParentRoute = (route: ROUTE): route is ParentRoute =>
   Array.isArray(route.children);
 
