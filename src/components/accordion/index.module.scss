@@ -51,6 +51,7 @@
     }
   }
 
+  // 애니메이션으로 처리
   .item3 {
     overflow: hidden;
 
@@ -63,7 +64,7 @@
     &.current .description {
       padding: 15px;
       border-bottom-width: 1px;
-      max-height: 300px;
+      max-height: 300px; //각 높이가 다를 때, vh로 하면 스크롤이 생겼다 사라지는 등 어색할 수 있음. max-height로 하는 트랜지션 한계
     }
   }
 
