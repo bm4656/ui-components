@@ -34,6 +34,7 @@ const initiator = (wrapper: HTMLDivElement) => {
   const $ul = document.createElement('ul');
   $ul.classList.add(cx('container'));
 
+  // ul에 이벤트 걸고 거기서 버블링 발생하니까 그걸로 통제
   const handleClickTab = (e: Event) => {
     const $el = e.target as HTMLElement;
     if (!$el.classList.contains(cx('tab'))) return;
