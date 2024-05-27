@@ -39,7 +39,7 @@
       }
     }
   }
-
+  // display로 내용 보이게 안보이게 처리
   .item2 {
     .description {
       display: none;
@@ -97,7 +97,7 @@
       }
     }
   }
-  
+
   details[open] summary {
     background-color: #ace;
     padding: 15px;
@@ -109,17 +109,16 @@
     border-bottom-width: 0;
   }
 
-  summary{
+  summary {
     padding: 15px;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
   }
 
-  summary::marker{
-    content: "+ ";
+  summary::marker {
+    content: '+ ';
   }
   details[open] summary::marker {
-    content: "- ";
+    content: '- ';
   }
 }
-
