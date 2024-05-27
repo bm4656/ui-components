@@ -1,4 +1,4 @@
-import Accordion from './components/accordion';
+import Accordions from './components/accordion';
 import InfiniteScrollR from './components/infiniteScroll/react';
 import InfiniteScrollV from './components/infiniteScroll/vanilla';
 
@@ -78,7 +78,7 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
     key: '/accordion',
     link: '/accordion',
     name: '01. 아코디언',
-    children: Accordion,
+    children: Accordions,
   },
 
   '/tabMenu': {
